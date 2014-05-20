@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegionManagerAwareBehavior-WPF", "RegionManagerAwareBehavior-WPF\RegionManagerAwareBehavior-WPF.csproj", "{FC2FD140-DF66-436C-8DEB-3D1129D59AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{FD91C50A-9748-4FC3-89EF-7D0EA24D4A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleWithTemplate", "ModuleWithTemplate\ModuleWithTemplate.csproj", "{66551033-C68D-496F-AF59-F8E289046365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC2FD140-DF66-436C-8DEB-3D1129D59AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2FD140-DF66-436C-8DEB-3D1129D59AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2FD140-DF66-436C-8DEB-3D1129D59AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2FD140-DF66-436C-8DEB-3D1129D59AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD91C50A-9748-4FC3-89EF-7D0EA24D4A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD91C50A-9748-4FC3-89EF-7D0EA24D4A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD91C50A-9748-4FC3-89EF-7D0EA24D4A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD91C50A-9748-4FC3-89EF-7D0EA24D4A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66551033-C68D-496F-AF59-F8E289046365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66551033-C68D-496F-AF59-F8E289046365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66551033-C68D-496F-AF59-F8E289046365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66551033-C68D-496F-AF59-F8E289046365}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

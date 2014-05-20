@@ -1,0 +1,8 @@
+﻿<Window x:Class="RegionManagerAwareBehavior_WPF.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/prism"
+        Title="MainWindow" Height="500" Width="300">
+    <ItemsControl Name="MainRegion" prism:RegionManager.RegionName="MainRegion" />
+    
+</Window>

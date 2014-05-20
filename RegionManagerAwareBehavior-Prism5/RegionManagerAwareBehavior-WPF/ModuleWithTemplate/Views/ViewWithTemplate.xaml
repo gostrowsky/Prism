@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ModuleWithTemplate.Views.ViewWithTemplate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:prism="http://www.codeplex.com/prism"
+             xmlns:inf="clr-namespace:Infrastructure;assembly=Infrastructure"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             x:Name="ViewWithSimpleRegion"
+             >
+    <StackPanel>
+        <TextBlock></TextBlock>
+        <ContentControl BorderThickness="2" BorderBrush="Gray">
+            <ContentControl.ContentTemplate>
+
+                <DataTemplate>
+                    <StackPanel Background="Beige" Orientation="Vertical">
+                        <TextBlock Text="Region inside data template:" />
+                        <Border BorderThickness="2" BorderBrush="Black">
+                            <ScrollViewer MaxHeight="110" VerticalScrollBarVisibility="Auto">
+                                <ItemsControl MinWidth="400" MinHeight="100" prism:RegionManager.RegionName="RegionInTemplate" prism:RegionManager.RegionManager="{Binding ElementName=ViewWithSimpleRegion, Path=DataContext.RegionManager}"/>
+                            </ScrollViewer>
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+
+            </ContentControl.ContentTemplate>
+
+            <!-- We put this object in the ContentControl' content, so that the template is shown. -->
+            <TextBlock Text="An Item"/>
+
+        </ContentControl>
+        <Button Content="Add Item" Width="100" HorizontalAlignment="Right" Margin="3" Command="{Binding AddItem}"/>
+    </StackPanel>
+</UserControl>
